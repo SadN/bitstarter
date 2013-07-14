@@ -1,8 +1,10 @@
-var express = require('express');
+VAR EXPRESS = REQUIRE('EXPRESS');
 
-var app = express.createServer(express.logger());
+VAR APP = EXPRESS.CREATESERVER(EXPRESS.LOGGER());
 
-var buffer = fs.readFileSync ("/index.html");
+VAR FS = REQUIRE('FS');
+
+var buffer = FS.readFileSync ("/index.html");
 
 
 app.get('/', function(request, response) {
